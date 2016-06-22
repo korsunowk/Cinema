@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %} {{ film.name }} | расписание {% endblock %}
+{% block template %}
+	<link rel="stylesheet" href="{% static 'seans.css' %}">
+{% endblock %}
+{% block navbar %}
+<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li class="sp1"><a href="/">АФИША</a></li>
+				<li class="sp1"><a href="/soon">СКОРО В ПРОКАТЕ</a></li>
+				<li class="sp1"><a href="/price">ЦЕНЫ И СКИДКИ</a></li>
+				<li class="sp1"><a href="/guest">ГОСТЕВАЯ КНИГА</a></li>
+				<li class="sp1"><a href="/mykino">О КИНОТЕАТРЕ</a></li>
+				<li class="sp1"><a href="/contact">КОНТАКТЫ</a></li>
+				{% if user.is_authenticated %}
+				    <li class="sp2"><a href="/kabinet/">Кабинет</a></li>|<li class="sp2"><a href="/logout">Выход</a></li>
+                {% else %}
+                    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
+                {% endif %}
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+{% block content %}
+
+
+	<div class="body">
+		<div class="one">
+			<img src="{{ film.image.url }}" width="260" height="525">
+		</div>
+		<div class="two">
+			<p class="two_p_five">Рассписание сеансов и цены</p>
+			<h3>{{ film.name }}</h3>
+			<p class="two_p_one">{{ film.secondname }}</p>
+<div class="two_ul2">
+                {% for date,time in seans_data.items %}
+
+                    <p class="two_p2">{{ date }}</p>
+
+                    {% for tim in time %}
+                    <ul class="ul2">
+                    {% if tim|length == 20 %}
+                        <li> {{ tim }}</li>
+                    {% elif tim|length > 9 and tim|length < 20 %}
+                        <button class='zakaz_button' onclick="myfunk('{{ tim }}')">Заказать билеты</button>
+                        <br><br>
+                    {% elif tim|length < 9 %}
+                        Стоимость билета : {{ tim }} грн
+                    {% endif %}
+                    </ul>
+                        {% endfor %}
+
+            {% endfor %}
+</div>
+			<div class="three">
+				<ul class="three_ul">
+					<li class="three_li2"><img src="{% static 'img/ico1.png' %}">Расписание сеансов и цены</li>
+					<li class="three_li2"><img src="{% static 'img/ico2.png' %}"><a href="/treler/{{ film.url_name }}/"> Смотреть трейлер</a></li>
+					<li class="three_li2"><img src="{% static 'img/ico3.png' %}"><a href="/otziv/{{ film.url_name }}/"> Напишите отзыв о фильме</a></li>
+				</ul>
+			</div>
+			<br>
+		</div>
+
+<script type="text/javascript">
+    function myfunk(seans_id){
+        my_url = '/buy/seans/'+seans_id;
+	    var buy_win = window.open(my_url,'buy_window','width=1040, height = 730, menubar="no", toolbar="no", location="no" ');
+	    buy_win.moveTo(screen.width/2-520,screen.height/2-350);
+}
+
+</script>
+	{% endblock %}

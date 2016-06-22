@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %} Кинотеатр | кабинет {% endblock %}
+{% block template %}	<link rel="stylesheet" href="{% static 'kabinet.css' %}"> {% endblock %}
+{% block navbar %}
+<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li class="sp1"><a href="/">АФИША</a></li>
+				<li class="sp1"><a href="/soon">СКОРО В ПРОКАТЕ</a></li>
+				<li class="sp1"><a href="/price">ЦЕНЫ И СКИДКИ</a></li>
+				<li class="sp1"><a href="/guest">ГОСТЕВАЯ КНИГА</a></li>
+				<li class="sp1"><a href="/mykino">О КИНОТЕАТРЕ</a></li>
+				<li class="sp1"><a href="/contact">КОНТАКТЫ</a></li>
+                {% if user.is_authenticated %}
+				    <li class="sp2 link"><a href="/kabinet/">Кабинет</a></li>|<li class="sp2"><a href="/logout">Выход</a></li>
+                {% else %}
+                    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
+                {% endif %}
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+{% block content %}
+
+    {% if not user.is_superuser %}
+	    <div class="body">
+		<p class="body_p">
+		</p>
+
+        <h4>История покупок:</h4> <br>
+
+        <table>
+            {% for bilet in bilets %}
+            <tr>
+                <td>
+                    <div class="text_bilet">
+                        <div class="td_date">{{ bilet.seans_id.date }}, {{ bilet.seans_id.time }}</div> <a href="/otziv/{{ bilet.seans_id.film.url_name }}/">{{ bilet.seans_id.film.name }}</a>, ряд: {{ bilet.row }}, место: {{ bilet.seat }}, цена: {{ bilet.price }} грн
+                        {% if not bilet.forname %}
+                            <br>код для печати: {{ bilet.pk }}
+                        {% else %}
+                            <br>Бронь снимается за 30 минут до начала сеанса!
+                        {% endif %}
+
+                    </div>
+                </td>
+                <td>
+                    {% if not bilet.forname %}
+                    <div class="kupleno">
+                        КУПЛЕНО
+                    </div>
+                    {% else %}
+                    <div class="bron">
+                        БРОНЬ
+                    </div>
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+<br>
+<div class="pagination">
+    <div class="pagination pagination-centered">
+        <ul>
+            {% for page in bilets.paginator.page_range %}
+                {% if page == bilets.number %}
+                    <li class="current"><a href="/kabinet/page/{{ page }}/">{{ page }}</a></li>
+                {% else %}
+                    <li><a href="/kabinet/page/{{ page }}/">{{ page }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+        {% else %}
+        <table class="kabinet_table" align="center">
+        <caption class="kabinet_caption">Работа с отчетами кинотеатра</caption>
+            <tr><td colspan='3'><hr></td></tr>
+            <tr><td colspan='3'><div сlass="text_bilet">Работа с билетами кинотеатра</div></td></tr>
+            <tr><td colspan='3'><br></td></tr>
+            <tr>
+                <form action="/printbilet/" method="post">
+                    {% csrf_token %}
+                    <td colspan="1" class="pad_td">
+                        <button type="submit">Распечатать билет</button>
+                    </td>
+                    <td colspan="1" class="pad_td">
+                        <input name="id_bilet" type="text" placeholder="Введите код билета..." required/>
+                    </td>
+                    <td colspan="1" class="pad_td">
+                        {% if admin == 'bilet_true' %}
+                            {{ user_name }} , {{ seans_name }}
+                        {% elif admin == 'bilet_false' %}
+                            {{ error }}
+                        {% endif %}
+                    </td>
+                </form>
+            </tr>
+        <tr><td colspan='3'><hr></td></tr>
+        <tr><td colspan='3'><div сlass="text_bilet">Работа с отчетами по сеансам кинотеатра</div></td></tr>
+        <tr><td colspan='3'><br></td></tr>
+            <tr>
+                <form action="/printotchet/seans/" method="post">
+                    {% csrf_token %}
+                    <td class="pad_td">
+                        <button href="/printotchet/seans/">Распечатать отчет по сеансу</button>
+                    </td>
+
+                    <td class="pad_td">
+                        <input name="id_seans" type="text" placeholder="Введите код сеанса..." required/>
+                    </td>
+                    <td colspan="1" class="pad_td">
+                        {% if admin == 'seans_true' %}
+                            {{ seans_name }}, {{ seans_date }}, {{ seans_time }}
+                        {% elif admin == 'seans_false' %}
+                            {{ seans_false }}
+                        {% endif %}
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <form action="/printotchet/date/" method="post">
+                    {% csrf_token %}
+                    <td class="pad_td">
+                        <button href="/printotchet/date/">Распечатать отчет по нужной дате</button>
+                    </td>
+                    <td class="pad_td">
+                        <input name="date_seans" type="date" required/>
+                    </td>
+                    <td colspan="1" class="pad_td">
+                        {% if date_error %}
+                            {{ date_error }}
+                        {% endif %}
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <form action="/printotchet/interval/" method="post">
+                    {% csrf_token %}
+                    <td class="pad_td">
+                        <button href="/printotchet/interval/">Распечатать отчет за интервал времени</button>
+                    </td>
+                    <td class="pad_td">
+                        <input name="date1_seans" type="date" required/>
+                    </td>
+                    <td class="pad_td">
+                        <input name="date2_seans" type="date" required/>
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <td class="pad_td">
+                    <a href="/printotchet/week/"><button>Распечатать отчет по сеансам на неделю</button></a>
+                </td>
+                <td class="pad_td">
+                    <a href="/printotchet/month/"><button>Распечатать отчет по сеансам на месяц</button></a>
+                </td>
+                <td class="pad_td">
+                    <a href="/printotchet/halfyear/"><button>Распечатать отчет по сеансам за полгода</button></a>
+                </td>
+            </tr>
+        <tr><td colspan='3'><br></td></tr>
+        </table>
+        {% endif %}
+
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %} {{ film.name }} | отзыв {% endblock %}
+{% block template %}
+	<link rel="stylesheet" href="{% static 'otziv.css' %}">
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jq_otziv.js' %}"></script>
+{% endblock %}
+{% block navbar %}
+<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li class="sp1"><a href="/">АФИША</a></li>
+				<li class="sp1"><a href="/soon">СКОРО В ПРОКАТЕ</a></li>
+				<li class="sp1"><a href="/price">ЦЕНЫ И СКИДКИ</a></li>
+				<li class="sp1"><a href="/guest">ГОСТЕВАЯ КНИГА</a></li>
+				<li class="sp1"><a href="/mykino">О КИНОТЕАТРЕ</a></li>
+				<li class="sp1"><a href="/contact">КОНТАКТЫ</a></li>
+				{% if user.is_authenticated %}
+				    <li class="sp2"><a href="/kabinet/">Кабинет</a></li>|<li class="sp2"><a href="/logout">Выход</a></li>
+                {% else %}
+                    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
+                {% endif %}
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+{% block content %}
+
+	<div class="body">
+		<p class="body_p">
+		    <br>
+		</p>
+		<h4>
+			Отзыв к фильму {{ film.name }} ({{ film.year }})
+		</h4>
+			<div class="one">
+				<img src="{{ film.image.url }}" width="260" height="525">
+			</div>
+			<div class="two">
+				<h3>{{ film.name }}</h3>
+				<p class="two_p_one">{{ film.secondname }}</p>
+				<p class="two_p_two">Cеансы:<span class="time"> <a href="/film/{{ film.url_name }}/">расписание</a></span></p>
+				<p class="two_p_three">
+					{{ film.opisanie }}
+				</p>
+				<ul class="two_ul_two">
+					<li class="two_li"><b>В прокате:</b> {{ film.prokat }}</li>
+					<li class="two_li"><b>Формат:</b> {{ film.format }}</li>
+					<li class="two_li"><b>Длительность:</b> {{ film.dlitelnost }}</li>
+					<li class="two_li"><b>Жанр:</b> {% for zhanr in film.zhanr.all %} {{ zhanr }}, {% endfor %}</li>
+					<li class="two_li"><b>Производство:</b> {{ film.year }}, {{ film.proizvodstvo }}</li>
+					<li class="two_li"><b>Режисер:</b> {{ film.rezhiser }}</li>
+					<li class="two_li"><b>Актеры:</b> {{ film.actors }}</li>
+				</ul>
+			</div>
+			<div class="three">
+				<ul class="three_ul">
+					<li class="three_li"><img src="{% static 'img/ico1.png' %}"><a href="/film/{{ film.url_name }}/"> Расписание сеансов и цены</a></li>
+					<li class="three_li"><img src="{% static 'img/ico2.png' %}"><a href="/treler/{{ film.url_name }}/"> Смотреть трейлер</a></li>
+					<li class="three_li"><img src="{% static 'img/ico3.png' %}">Напишите отзыв о фильме</li>
+				</ul>
+			</div>
+			<br>
+
+            <br>
+    {% for otziv in comment %}
+        <div class="otziv">
+            <h5>{{ otziv.name }}</h5>
+            {{ otziv.date }}<br><br>
+            {{ otziv.text }}
+        </div>
+        <br>
+    {% endfor %}
+        <hidden value="{{ seans.film.url_name }}" id="hid1">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="otziv_form">
+                <p class="p_otz">Оставить отзыв</p><br>
+                <label class="name_otziv">Имя</label>
+                <input name="name" id="name" type="text"><br>
+                <label class="email_otziv">Email</label>
+                <input id="email" name="email" type="email"><br>
+                <label class="text_otziv">Комментарий</label>
+                <textarea id="comment" name="comment" cols="45" rows="8" maxlength="20000" aria-required="true" required="required"></textarea>
+                <br><button id="button" class="but_otziv btn-success">Отправить</button>
+            </div>
+        </form>
+
+        {% endblock %}

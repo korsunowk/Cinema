@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block title %} Кинотеатр | гостевая книга {% endblock %}
+{% block template %}
+    <link rel="stylesheet" href="{% static 'guest.css' %}">
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jq_guest.js' %}"></script>
+{% endblock %}
+{% block navbar %}
+<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li class="sp1"><a href="/">АФИША</a></li>
+				<li class="sp1"><a href="/soon">СКОРО В ПРОКАТЕ</a></li>
+				<li class="sp1"><a href="/price">ЦЕНЫ И СКИДКИ</a></li>
+				<li class="sp1 link"><a href="/guest">ГОСТЕВАЯ КНИГА</a></li>
+				<li class="sp1"><a href="/mykino">О КИНОТЕАТРЕ</a></li>
+				<li class="sp1"><a href="/contact">КОНТАКТЫ</a></li>
+				{% if user.is_authenticated %}
+				    <li class="sp2"><a href="/kabinet/">Кабинет</a></li>|<li class="sp2"><a href="/logout">Выход</a></li>
+                {% else %}
+                    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
+                {% endif %}
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="body">
+		<p class="body_p">
+		</p>
+		<h4>
+		    Гостевая книга кинотеатра
+		</h4>
+		<p class="p_price">
+			Тут Вы можете оставить свои отзывы о работе кинотеатра или сайта, задать вопрос Администрации или просто похвалить нас..
+		</p>
+		<H4>
+			Внимание!
+		</H4>
+		<p class="p_price">
+			На странице <a href="soon.html">скоро в прокате</a> находится список фильмов, которые планируются к показу в кинотеатре.
+		</p>
+		<p class="p1">
+		    Добавить новое сообщение
+		</p>
+    <form method="POST">
+            {% csrf_token %}
+		<div class="wind">
+			<div class="inp1">
+				<input type="text" name="name" required="required" id="name" placeholder="Ваше имя...">
+			</div>
+			<div class="inp1">
+				<input type="text" name="email" required="required" id="email" placeholder="Email...">
+			</div>
+			<div class="ta">
+				<textarea name="comment" id="comment" aria-required="true" required="required" placeholder="Сообщение..."></textarea>
+			</div>
+			<div class="inp1">
+				<button class="btn1">Отправить</button>
+			</div>
+		</div>
+    </form>
+		<div class="comment">
+			<H4>
+				Последние сообщения из гостевой книги:
+			</H4>
+		</div>
+
+        {% for otziv in otzivs %}
+
+        <div class="guest_otziv">
+            <h5>{{ otziv.0.name }}</h5>
+            {{ otziv.0.date }}<br><br>
+            <p class="guest_text">{{ otziv.0.text }}</p>
+            {% if not otziv.1 and user.is_superuser  %}
+            <button class="admin_but" data-target="{{ otziv.0.id }},{{ otziv.0.name }}">Ответить</button>
+            {% endif %}
+        </div>
+        {% if otziv.1 %}
+        <div class="admin_otziv">
+            <h5 style="color:yellow;">Администратор</h5>
+            <p class="guest_text">{{ otziv.1.text }}</p>
+        </div>
+        {% endif %}
+        <br>
+
+        {% endfor %}
+
+        <div style="display: none;" id="hid_area">
+            <form method="POST">
+                 {% csrf_token %}
+                <div class="ta">
+                    <textarea name="admin_comment" id="admin_comment" aria-required="true" placeholder="Сообщение..."></textarea>
+                </div>
+                <div class="inp1">
+                    <button class="btn2">Ответить</button>
+                </div>
+            </form>
+        </div>
+
+<script type="text/javascript" src="{% static 'js/jq_guest.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %} Кинотеатр | о кинотеатре {% endblock %}
+{% block template %}
+	<link rel="stylesheet" href="{% static 'mykino.css' %}">
+{% endblock %}
+{% block navbar %}
+<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li class="sp1"><a href="/">АФИША</a></li>
+				<li class="sp1"><a href="/soon">СКОРО В ПРОКАТЕ</a></li>
+				<li class="sp1"><a href="/price">ЦЕНЫ И СКИДКИ</a></li>
+				<li class="sp1"><a href="/guest">ГОСТЕВАЯ КНИГА</a></li>
+				<li class="sp1 link"><a href="/mykino">О КИНОТЕАТРЕ</a></li>
+				<li class="sp1"><a href="/contact">КОНТАКТЫ</a></li>
+				{% if user.is_authenticated %}
+				    <li class="sp2"><a href="/kabinet/">Кабинет</a></li>|<li class="sp2"><a href="/logout">Выход</a></li>
+                {% else %}
+                    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
+                {% endif %}
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+{% block content %}
+	<div class="body">
+		<p class="body_p">
+		</p>
+		<h4>
+		Кинотеатр
+		</h4>
+		<p class="p_price">
+			Кинотеатр не зря называют модным и молодежным: он находится в самом центре города Запорожье.
+		</p>
+		<div class="columns">
+ 			<div class="item">
+  				<img src="{% static 'img/kol1.jpg' %}" width="400">
+ 				<div class="info">
+ 					 <p><b>Кинотеатр</b> <br>Вид кинотеатра</p>
+ 				</div>
+ 			</div>
+		</div>
+		<div class="columns">
+ 			<div class="item">
+  				<img src="{% static 'img/kol2.jpg' %}" width="400">
+ 				<div class="info">
+ 					 <p><b>Кинотеатр</b> <br>Вестибюль</p>
+ 				</div>
+ 			</div>
+		</div>
+		<div class="columns1">
+ 			<div class="item">
+  				<img src="{% static 'img/kol4.jpg' %}" width="400">
+ 				<div class="info">
+ 					 <p><b>Кинотеатр</b> <br>Подготовка к сеансу</p>
+ 				</div>
+ 			</div>
+		</div>
+		<div class="columns1">
+ 			<div class="item">
+  				<img src="{% static 'img/kol3.jpg' %}" width="400">
+ 				<div class="info">
+ 					 <p><b>Кинотеатр</b> <br>Большой зал</p>
+ 				</div>
+ 			</div>
+		</div>
+		<br>
+		<p class="p_price2">
+			Приветливый и отзывчивый персонал всегда рад новым и постоянным посетителям.<br>
+			Уютная обстановка, стильный интерьер и приятное качество сервиса не оставят вас равнодушными, и вы захотите вернуться к нам снова<br> и снова.
+		</p>
+
+{% endblock %}

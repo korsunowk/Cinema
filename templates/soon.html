@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %} Кинотеатр | скоро в прокате {% endblock %}
+{% block template %}
+	<link rel="stylesheet" href="{% static 'soon.css' %}">
+{% endblock %}
+{% block navbar %}
+<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li class="sp1"><a href="/">АФИША</a></li>
+				<li class="sp1 link"><a href="/soon">СКОРО В ПРОКАТЕ</a></li>
+				<li class="sp1"><a href="/price">ЦЕНЫ И СКИДКИ</a></li>
+				<li class="sp1"><a href="/guest">ГОСТЕВАЯ КНИГА</a></li>
+				<li class="sp1"><a href="/mykino">О КИНОТЕАТРЕ</a></li>
+				<li class="sp1"><a href="/contact">КОНТАКТЫ</a></li>
+				{% if user.is_authenticated %}
+				    <li class="sp2"><a href="/kabinet/">Кабинет</a></li>|<li class="sp2"><a href="/logout">Выход</a></li>
+                {% else %}
+                    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
+                {% endif %}
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+{% block content %}
+	<div class="body">
+		<p class="body_p">
+		</p>
+		<h4>
+		Скоро лучшие новинки кино:
+		</h4>
+        {% for film in films %}
+			<div class="one">
+				<img src="{{ film.image.url }}" width="260" height="525">
+			</div>
+			<div class="two">
+				<h3>{{ film.name }}</h3>
+				<p class="two_p_one">{{ film.secondname }}</p>
+				
+				<p class="two_p_three">
+					{{ film.opisanie }}
+				</p>
+				<ul class="two_ul_two">
+					<li class="two_li"><b>В прокате:</b> с {{ film.prokat }}</li>
+					<li class="two_li"><b>Формат:</b> {{ film.format }}</li>
+					<li class="two_li"><b>Жанр:</b> {% for zhanr in film.zhanr.all %} {{ zhanr }}, {% endfor %}</li>
+					<li class="two_li"><b>Производство:</b> {{ film.year }}, {{ film.proizvodstvo }}</li>
+					<li class="two_li"><b>Режисер:</b> {{ film.rezhiser }}</li>
+                    <li class="two_li"><b>Актеры:</b> {{ film.actors }}</li>
+				</ul>
+			</div>
+
+			<div class="three">
+				<ul class="three_ul">
+					<li class="three_li"><img src="{% static 'img/ico2.png' %}"><a href="/treler/{{ film.url_name }}/"> Смотреть трейлер</a></li>
+				</ul>
+            </div>
+
+        {% endfor %}
+
+        <div class="pagination">
+                    <div class="pagination pagination-centered">
+                <ul>
+                    {% for page in films.paginator.page_range %}
+                        {% if page == films.number %}
+                            <li class="current"><a href="/soon/page/{{ page }}/">{{ page }}</a></li>
+                        {% else %}
+                            <li><a href="/soon/page/{{ page }}/">{{ page }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    <br>
+{% endblock %}

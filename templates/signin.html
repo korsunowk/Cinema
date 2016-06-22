@@ -1,0 +1,53 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link type="image/x-icon" rel="shortcut icon" href="{% static 'img/ico1.ico' %}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in</title>
+
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link href="{%   static 'login.css' %}" rel="stylesheet">
+    </head>
+  <body>
+  <div class="backend">
+  </div>
+  <div class="container cont_one">
+    
+      <div class="back">
+        <p class="zag">Sign in</p>
+        <br><br>
+          <form action="/sign_in/" method="post">
+              {% csrf_token %}
+            <p><input type="email" required="required" name="email" class="inp1" placeholder="Your email address"></p>
+            <p><input type="password" name="password" class="inp2" placeholder="Your password" required></p>
+
+              {% if login_error %}
+                <p class="error"> Проверьте правильность ввода данных и попробуйте заново. </p>
+            {% endif %}
+
+              <p><button type="submit" class="butt3">Sign in</button></p>
+          </form>
+
+
+
+        <p><a href="/register"><button class="butt33">Registration</button></a></p>
+        <br><br>
+        <form action="/">
+          <p><button class="backhome"><i class="fa fa-arrow-left"></i>Home</button></p>
+        </form>
+      </div>
+    <br>
+  </div>
+
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{%  static 'js/bootstrap.js'  %}"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %} Кинотеатр | цены и скидки {% endblock %}
+{% block template %}
+	<link rel="stylesheet" href="{% static 'price.css' %}">
+{% endblock %}
+{% block navbar %}
+<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li class="sp1"><a href="/">АФИША</a></li>
+				<li class="sp1"><a href="/soon">СКОРО В ПРОКАТЕ</a></li>
+				<li class="sp1 link"><a href="/price">ЦЕНЫ И СКИДКИ</a></li>
+				<li class="sp1"><a href="/guest">ГОСТЕВАЯ КНИГА</a></li>
+				<li class="sp1"><a href="/mykino">О КИНОТЕАТРЕ</a></li>
+				<li class="sp1"><a href="/contact">КОНТАКТЫ</a></li>
+				{% if user.is_authenticated %}
+				    <li class="sp2"><a href="/kabinet/">Кабинет</a></li>|<li class="sp2"><a href="/logout">Выход</a></li>
+                {% else %}
+                    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
+                {% endif %}
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+{% block content %}
+	<div class="body">
+		<p class="body_p">
+		</p>
+		<h4>
+		Цены на билеты в кинотеатре
+		</h4>
+		<p class="p_price">
+			Цены от 30 до 60 грн;<br>
+			VIP места от 120 до 240 грн.
+		</p>
+		<p class="p_price2">
+			Сеанс показыватся при условиях:
+		</p>
+			<p class="p_price">
+			до 13:00 и после 22:00 - от 3-х зрителей;<br>
+			с 13:00 до 22:00 - от 2х - зрителей.
+		</p>
+		<p class="p_price3">
+			<b>Внимание:</b> проход со своими напитками и продуктами на сеанс запрещен правилами посещения кинотеатра!
+		</p>
+	{% endblock %}

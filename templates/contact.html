@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %} Кинотеатр | контакты {% endblock %}
+{% block template %}	<link rel="stylesheet" href="{% static 'contact.css' %}"> {% endblock %}
+{% block navbar %}
+<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li class="sp1"><a href="/">АФИША</a></li>
+				<li class="sp1"><a href="/soon">СКОРО В ПРОКАТЕ</a></li>
+				<li class="sp1"><a href="/price">ЦЕНЫ И СКИДКИ</a></li>
+				<li class="sp1"><a href="/guest">ГОСТЕВАЯ КНИГА</a></li>
+				<li class="sp1"><a href="/mykino">О КИНОТЕАТРЕ</a></li>
+				<li class="sp1 link"><a href="/contact">КОНТАКТЫ</a></li>
+                {% if user.is_authenticated %}
+				    <li class="sp2"><a href="/kabinet/">Кабинет</a></li>|<li class="sp2"><a href="/logout">Выход</a></li>
+                {% else %}
+                    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
+                {% endif %}
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+{% block content %}
+
+	<div class="body">
+		<p class="body_p">
+		</p>
+
+		<h4>
+		Контакты
+		</h4>
+		<p class="p_price">
+			Кинотеатр находится по адресу:<br>
+			Запорожье, ул. Мира 84
+		</p>
+		<p class="p_price2">
+			Контактные телефоны: 
+		</p>
+		<ul class="p_ul_one">
+			<li>(061) 701-73-89 - бронирование, администрация</li>
+			<li>(061) 220-95-00 - автоответчик</li>
+		</ul>
+		<p class="p_price2">
+			Электронный адрес администрации кинотеатра: 
+		</p>
+		<ul class="p_ul_one">
+			<li>first@gmail.com</li>
+		</ul>
+		<p class="p_price2">
+			По вопросам размещения рекламы на сайте: 
+		</p>
+		<ul class="p_ul_one">
+			<li>(063) 699-06-66</li>
+			<li>second@gmail.com</li>
+		</ul>
+		<h4>
+			Карта проезда
+		</h4>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2187.4539011606917!2d35.12279697624578!3d47.84810367017965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0716af058ffb816b!2z0JfQsNC_0L7RgNC-0LbRgdC60LjQuSDRjdC70LXQutGC0YDQvtGC0LXRhdC90LjRh9C10YHQutC40Lkg0LrQvtC70LvQtdC00LY!5e0!3m2!1sru!2sua!4v1454960137936" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+
+{% endblock %}

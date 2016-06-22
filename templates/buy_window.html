@@ -1,0 +1,126 @@
+﻿{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Покупка билета</title>
+    <link href="{% static 'buy_window.css' %} " rel="stylesheet">
+	<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/js.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jq.js' %}"></script>
+</head>
+<body>
+<table width="1000px" id="korzina">
+    {% csrf_token %}
+    {% if user.is_authenticated %}
+        Здравствуйте, {{ user_name }}!
+    {% else %}
+        Войдите в свой аккаунт, чтобы купить билет.
+    {% endif %}
+
+
+		<tr width="1000px">
+			<td>
+				<img class='img_film' src="{{ seans.film.image.url }}" id="test" width="80px" height="100px">
+			</td>
+			<td class="one_td">
+				{{ seans.film.name }}<br><br>сеанс: {{ seans.date }}, {{ seans.time }}<br> Большой кинозал
+			</td>
+			<td rowspan=10>
+				<table class="korzina">
+					<tr>
+						<td colspan=2 class="name_mest">
+							<h2>КОРЗИНА</h2><br><hr>
+						</td>
+					</tr>
+					<tr>
+						<td width="200px" class="summ_td">
+							{{ seans.film.name }}
+						</td>
+						<td class="second_td" width="100px">
+                            {{ seans.date }}, {{ seans.time }}
+						</td>
+					</tr>
+					<tr>
+						<td colspan=2>
+							<hr>
+						</td>
+					</tr>
+					<table>
+						<tr>
+							<td colspan=2>
+								<hr>
+							</td>
+						</tr>
+						<tr class="summa_td">
+							<td class="summ_td">
+								Общая стоимость
+							</td>
+							<td class="second_td">
+								<label id="summa">0</label> грн.
+							</td>
+						</tr>
+					<table>
+                        <tr>
+                            <td>
+                                <button href="#" class="cancel" id="cancel"> Очистить корзину </button>
+                            </td>
+                        </tr>
+				</table>
+			</td>
+		</tr>
+<!-- 		<tr>
+			<td colspan=2>
+				<h4>Выберите нужные места нажав на место правой клавишей мыши.</h4>
+			</td>
+		</tr> -->
+		<tr>
+			<td colspan=2 class="zal name_mest">
+				Ваше место <img src="{%  static 'img/red.png' %}" width="20px" style="border: 1px solid black;">
+                Свободно <img src="{%  static 'img/green.png' %}" width="20px" style="border: 1px solid black;">
+                Диван <img src="{%  static 'img/yellow.png' %}" width="20px" style="border: 1px solid black;">
+                Занято <img src="{%  static 'img/black.png' %}" width="20px" style="border: 1px solid black;">
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2 class="zal">
+				<hr>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2 class="zal" id="myzal">
+				
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2 class="zal" id="vipzal">
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+                {% if user.is_authenticated %}
+                    <button href="#" class="buy"> Купить </button>
+                {% else %}
+                    <button href="#" class="buy_false"> Купить </button>
+                {% endif %}
+			</td>
+			<td>
+				{% if user.is_authenticated %}
+                    <button href="#" class="bron"> Забронировать </button>
+                {% else %}
+                    <button href="#" class="bron_false"> Заброниовать </button>
+                {% endif %}
+			</td>
+		</tr>
+	</table>
+	<input type="hidden" value="{{ price1 }}" id="hid1">
+	<input type="hidden" value="{{ price2 }}" id="hid2">
+    <input type="hidden" value="{{ seans.id }}" id="seans_id">
+    <input type="hidden" value="{{ red_bilet }}" id="red_bilet">
+    <input type="hidden" value="{{ black_bilet }}" id="black_bilet">
+	<div class="cssload-container">
+        <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+    </div>
+</body>
+</html>

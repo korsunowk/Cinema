@@ -1,0 +1,52 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Регистрация</title>
+	<meta charset="utf-8">
+    <link type="image/x-icon" rel="shortcut icon" href="{% static 'img/ico1.ico' %}">
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'registr.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<div class="block">
+		<p class="p_one">Регистрация аккаунта</p>
+
+        <form method="POST" action="/register/">
+            {% csrf_token %}
+            <div class="fields">
+                <div class="row">
+                    <text class="text2">Имя</text>{{ form.firstname }}<div class="circle_gr"></div>
+                </div>
+                <div class="row top">
+                    <text class="text1">Фамилия</text>{{ form.lastname }}<div class="circle_red"></div>
+                </div>
+                <div class="row top">
+                    <text class="text3">Email</text>{{ form.email }}<div class="circle_blue"></div>
+                </div>
+                <div class="row top">
+                    <text class="text4">Пароль</text><input class="inp3" name="password1" type="password" style="text-align:center" required/><div class="circle"></div>
+                </div>
+                <div class="row top">
+                    <text class="text5">Повторите пароль</text><input class="inp3" name="password2" type="password" style="text-align:center" required/><div class="circle"></div>
+                </div>
+                {% if form.email.errors %}
+                    <div class="row top">
+                        <text class="text5"><h4>Пользователь с таким email уже существует.</h4></text>
+                    </div>
+                {% elif reg_error %}
+                    <div class="row top">
+                        <text class="text5"><h4>Проверьте правильность ввода данных и попробуйте заново.</h4></text>
+                    </div>
+                {% endif %}
+                <div class="row top">
+                    <button class="btn1">Готово</button>
+                </div>
+            </div>
+        </form>
+	</div>
+</div>
+</body>
+</html>

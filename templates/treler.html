@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %} {{ film.name }} | трейлер {% endblock %}
+{% block template %}
+	<link rel="stylesheet" href="{% static 'treler.css' %}">
+{% endblock %}
+{% block navbar %}
+<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li class="sp1"><a href="/">АФИША</a></li>
+				<li class="sp1"><a href="/soon">СКОРО В ПРОКАТЕ</a></li>
+				<li class="sp1"><a href="/price">ЦЕНЫ И СКИДКИ</a></li>
+				<li class="sp1"><a href="/guest">ГОСТЕВАЯ КНИГА</a></li>
+				<li class="sp1"><a href="/mykino">О КИНОТЕАТРЕ</a></li>
+				<li class="sp1"><a href="/contact">КОНТАКТЫ</a></li>
+				{% if user.is_authenticated %}
+				    <li class="sp2"><a href="/kabinet/">Кабинет</a></li>|<li class="sp2"><a href="/logout">Выход</a></li>
+                {% else %}
+                    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
+                {% endif %}
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+{% block content %}
+	<div class="body">
+{% for film in filmm %}
+		<div class="two">
+			<p class="two_p_five">Трейлер к фильму</p>
+			<h3>{{ film.name }}</h3>
+			<p class="two_p_one">{{ film.secondname }}</p>
+			<div class="three">
+				<ul class="three_ul">
+					<li class="three_li"><img src="{% static 'img/ico1.png' %}"><a href="/film/{{ film.url_name }}/">Расписание сеансов и цены</a></li>
+					<li class="three_li"><img src="{% static 'img/ico2.png' %}">Смотреть трейлер</li>
+					<li class="three_li"><img src="{% static 'img/ico3.png' %}"><a href="/otziv/{{ film.url_name }}/"> Напишите отзыв о фильме</a></li>
+				</ul>
+				<div class="video">
+					<iframe width="760" height="375" src="{{ film.trailer }}" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<br>
+			<p class="p_otz">{{ film.name }}</p>
+
+		</div>
+
+{% endfor %}
+{% endblock %}
