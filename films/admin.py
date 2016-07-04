@@ -23,11 +23,22 @@ class FilmAdmin(admin.ModelAdmin):
 
 @admin.register(Seans)
 class SeansAdmin(admin.ModelAdmin):
-    list_display = ('id','film_name_get','date','time','price',)
+    list_display = ('id','film','date','time','price', )
     search_fields = ('film__name',)
     list_filter = (
         ('date', DateFieldListFilter),
     )
+    fieldsets = (
+        (None, {
+            'fields': ('date', 'time', 'film', 'price')
+        }
+         ),
+    )
+
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        if db_field.name == "film":
+            kwargs["queryset"] = Film.objects.filter(prokat__lte=datetime.datetime.today().date())
+        return super(SeansAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
 
 @admin.register(Bron)
 class BronAdmin(admin.ModelAdmin):
