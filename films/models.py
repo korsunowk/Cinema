@@ -23,9 +23,23 @@ class Film(models.Model):
     rezhiser = models.CharField(max_length=50)
     actors = models.TextField()
     year = models.IntegerField()
-    image = models.ImageField(upload_to="media/films", height_field="image_height", width_field="image_width")
-    image_height = models.PositiveIntegerField(null=True, blank=True, editable=False, default="525")
-    image_width = models.PositiveIntegerField(null=True, blank=True, editable=False, default="260")
+    image = models.ImageField(
+        upload_to="media/films", 
+        height_field="image_height",
+        width_field="image_width"
+    )
+    image_height = models.PositiveIntegerField(
+        null=True, 
+        blank=True, 
+        editable=False, 
+        default="525"
+    )
+    image_width = models.PositiveIntegerField(
+        null=True, 
+        blank=True, 
+        editable=False, 
+        default="260"
+    )
     trailer = models.URLField()
     prokat = models.DateField(blank=True)
     zhanr = models.ManyToManyField(Zhanr)
@@ -66,7 +80,12 @@ class Seans(models.Model):
     def save(self, *args, **kwargs):
         for seans in Seans.objects.filter(date=getattr(self,'date')):
 
-            time1 = datetime.datetime.combine(getattr(self,'date'),datetime.datetime.strptime(getattr(self,'time'),'%H:%M').time())
+            time1 = datetime.datetime.combine(
+                getattr(self,'date'),
+                    datetime.datetime.strptime(
+                        getattr(self,'time'),
+                        '%H:%M').time()
+            )
             time2 = datetime.datetime.now()
 
             if getattr(self,'time') == seans.time or time1<time2:
