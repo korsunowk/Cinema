@@ -228,8 +228,8 @@ def main(request,url_date=datetime.today().date(), page_number=1):
     args['for_date'] = datetime.strptime(str(url_date),'%Y-%m-%d').date()
 
     seanss = Seans.objects.filter(date=str(url_date))
-    a = []
-    b = []
+    a = b = []
+    
     for seans in seanss:
         if seans.film not in a:
             a.append(seans.film)
