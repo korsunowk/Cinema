@@ -17,6 +17,8 @@ from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from django.conf import settings
+from PIL import Image
+
 
 def contact(request):
     args={}
