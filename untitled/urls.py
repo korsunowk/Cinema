@@ -15,9 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from django.views.generic import TemplateView
 from untitled import views
-from django.conf.urls import patterns
 from untitled import settings
 
 urlpatterns = [
@@ -36,17 +34,17 @@ urlpatterns = [
     url(r'^soon/$', views.soon),
     url(r'^printbilet/$', views.print_bilet),
     url(r'^treler/(\w+)/$', views.treler),
-    url(r'^kabinet/$',views.kabinet),
-    url(r'^kabinet/page/(\d+)/$',views.kabinet),
+    url(r'^kabinet/$', views.kabinet),
+    url(r'^kabinet/page/(\d+)/$', views.kabinet),
     url(r'^soon/page/(\d+)/$', views.soon),
     url(r'^buy/seans/seans_id=(\d+)/$', views.buy),
-    url(r'^printotchet/(\w+)/$',views.print_otchet),
+    url(r'^printotchet/(\w+)/$', views.print_otchet),
     url(r'^(?P<url_date>[\w-]+)/page/(?P<page_number>\d+)/$', views.main),
     url(r'^(?P<url_date>[\w-]+)/$', views.main),
 
 ]
 
 if settings.DEBUG:
-    urlpatterns += patterns('django.views.static',
-        (r'media/(?P<path>.*)', 'serve', {'document_root': settings.MEDIA_ROOT}),
-)
+    urlpatterns += ['django.views.static',
+                    (r'media/(?P<path>.*)', 'serve', {'document_root': settings.MEDIA_ROOT}),
+                    ]
