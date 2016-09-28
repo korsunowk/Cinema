@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class GuestOtziv(models.Model):
     name = models.CharField(max_length=30)
     email = models.EmailField()
@@ -11,6 +12,7 @@ class GuestOtziv(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class AdminOtziv(models.Model):
     text = models.TextField(max_length=20000)

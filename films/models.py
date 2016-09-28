@@ -2,15 +2,18 @@ from django.db import models
 import datetime
 from django.forms import ValidationError
 
+
 # Create your models here.
 
 class Zhanr(models.Model):
     name = models.CharField(max_length=15)
+
     def __unicode__(self):
         return self.name
 
     def __str__(self):
         return self.name
+
 
 class Film(models.Model):
     name = models.CharField(max_length=50)
@@ -24,20 +27,20 @@ class Film(models.Model):
     actors = models.TextField()
     year = models.IntegerField()
     image = models.ImageField(
-        upload_to="media/films", 
+        upload_to="media/films",
         height_field="image_height",
         width_field="image_width"
     )
     image_height = models.PositiveIntegerField(
-        null=True, 
-        blank=True, 
-        editable=False, 
+        null=True,
+        blank=True,
+        editable=False,
         default="525"
     )
     image_width = models.PositiveIntegerField(
-        null=True, 
-        blank=True, 
-        editable=False, 
+        null=True,
+        blank=True,
+        editable=False,
         default="260"
     )
     trailer = models.URLField()
@@ -53,10 +56,9 @@ class Film(models.Model):
     def zhanr_get(self):
         a = ''
         for i in self.zhanr.all():
-            a+=i.name+','
+            a += i.name + ','
 
         return a[:-1]
-
 
 
 class Seans(models.Model):
@@ -66,7 +68,7 @@ class Seans(models.Model):
     price = models.CommaSeparatedIntegerField(max_length=15)
 
     def __unicode__(self):
-        name = self.film+ "," + str(self.date) + " " + str(self.time)
+        name = self.film + "," + str(self.date) + " " + str(self.time)
         return name
 
     def __str__(self):
@@ -78,20 +80,21 @@ class Seans(models.Model):
         return self.film.name
 
     def save(self, *args, **kwargs):
-        for seans in Seans.objects.filter(date=getattr(self,'date')):
+        for seans in Seans.objects.filter(date=getattr(self, 'date')):
 
             time1 = datetime.datetime.combine(
-                getattr(self,'date'),
-                    datetime.datetime.strptime(
-                        getattr(self,'time'),
-                        '%H:%M').time()
+                getattr(self, 'date'),
+                datetime.datetime.strptime(
+                    getattr(self, 'time'),
+                    '%H:%M').time()
             )
             time2 = datetime.datetime.now()
 
-            if getattr(self,'time') == seans.time or time1<time2:
+            if getattr(self, 'time') == seans.time or time1 < time2:
                 raise ValidationError('Выбрано неподходящее время для сеанса.')
 
         super(Seans, self).save(*args, **kwargs)
+
 
 class Bron(models.Model):
     seans_id = models.ForeignKey(Seans)
@@ -115,6 +118,7 @@ class Bron(models.Model):
     def seans_time_get(self):
         return self.seans_id.time
 
+
 class Bilet(models.Model):
     seans_id = models.ForeignKey(Seans)
     row = models.IntegerField(default=0)
@@ -122,9 +126,9 @@ class Bilet(models.Model):
     price = models.IntegerField(default=0)
 
     def save(self, *args, **kwargs):
-        sell, created = Sell.objects.get_or_create(seans_id=getattr(self,'seans_id'))
+        sell, created = Sell.objects.get_or_create(seans_id=getattr(self, 'seans_id'))
         sell.kol_bil += 1
-        sell.summa += int(getattr(self,'price'))
+        sell.summa += int(getattr(self, 'price'))
         sell.save()
 
         super(Bilet, self).save(*args, **kwargs)

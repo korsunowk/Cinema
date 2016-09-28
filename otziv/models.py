@@ -1,6 +1,7 @@
 from django.db import models
 from films.models import Film
 
+
 class Otziv(models.Model):
     name = models.CharField(max_length=30)
     text = models.TextField(max_length=20000)

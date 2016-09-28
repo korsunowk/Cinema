@@ -8,7 +8,6 @@ from kinouser.models import Kinouser
 
 
 class UserCreationForm(forms.ModelForm):
-
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)
 
@@ -34,7 +33,6 @@ class UserCreationForm(forms.ModelForm):
 
 
 class UserChangeForm(forms.ModelForm):
-
     password = ReadOnlyPasswordHashField()
 
     class Meta:
@@ -42,31 +40,29 @@ class UserChangeForm(forms.ModelForm):
         fields = ('email', 'password', 'firstname', 'lastname', 'is_active', 'is_admin')
 
     def clean_password(self):
-
         return self.initial["password"]
 
 
 class UserAdmin(BaseUserAdmin):
-
     form = UserChangeForm
     add_form = UserCreationForm
 
-    list_display = ('email','firstname', 'lastname', 'is_admin')
+    list_display = ('email', 'firstname', 'lastname', 'is_admin')
     list_filter = ('is_admin',)
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
         ('Personal info', {'fields': ('firstname', 'lastname')}),
-        ('Buy history', {'fields': ('bilets','bron')}),
+        ('Buy history', {'fields': ('bilets', 'bron')}),
         ('Permissions', {'fields': ('is_admin',)}),
     )
 
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('email', 'firstname', 'lastname','bilets','bron', 'password1', 'password2')}
-        ),
+            'fields': ('email', 'firstname', 'lastname', 'bilets', 'bron', 'password1', 'password2')}
+         ),
     )
-    search_fields = ('email','lastname')
+    search_fields = ('email', 'lastname')
     ordering = ('email',)
     filter_horizontal = ()
 
