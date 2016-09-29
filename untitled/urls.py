@@ -17,6 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from untitled import views
 from untitled import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
 
@@ -45,6 +46,5 @@ urlpatterns = [
 ]
 
 if settings.DEBUG:
-    urlpatterns += ['django.views.static',
-                    (r'media/(?P<path>.*)', 'serve', {'document_root': settings.MEDIA_ROOT}),
-                    ]
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_URL)

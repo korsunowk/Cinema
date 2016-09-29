@@ -70,12 +70,13 @@ class Kinouser(AbstractBaseUser, PermissionsMixin):
         default=False
     )
 
+    is_staff = models.BooleanField(
+        'Is staff user',
+        default=False
+    )
+
     def get_full_name(self):
         return self.firstname + " " + self.lastname
-
-    @property
-    def is_staff(self):
-        return self.is_admin
 
     def get_short_name(self):
         return self.email

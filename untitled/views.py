@@ -1,5 +1,4 @@
 from django.shortcuts import render_to_response, redirect, HttpResponse
-from django.core.context_processors import csrf
 from films.models import Film, Seans, Bilet, Bron, Sell
 from django.core.paginator import Paginator
 from datetime import datetime, timedelta
@@ -9,7 +8,6 @@ from kinouser.models import Kinouser
 from django.views.decorators.csrf import csrf_exempt
 from otziv.models import Otziv
 from guest_otziv.models import GuestOtziv, AdminOtziv
-from os import startfile
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
@@ -18,14 +16,12 @@ from django.conf import settings
 
 def contact(request):
     args = {}
-    args.update(csrf(request))
     args['user'] = request.user
     return render_to_response('contact.html', args)
 
 
 def guest(request):
     args = {}
-    args.update(csrf(request))
     args['user'] = request.user
     all_otzivs = []
     otzivs = []
@@ -60,7 +56,6 @@ def logout(request):
 
 def login(request):
     args = {}
-    args.update(csrf(request))
     if request.POST:
         email = request.POST.get('email', '')
         password = request.POST.get('password', '')
@@ -79,7 +74,6 @@ def login(request):
 
 def register(request):
     args = {}
-    args.update(csrf(request))
     args['form'] = UserCreateForm()
     if request.POST:
         newuser_form = UserCreateForm(request.POST)
@@ -99,7 +93,6 @@ def register(request):
 
 def main(request, url_date=datetime.today().date(), page_number=1):
     args = {}
-    args.update(csrf(request))
     args['user'] = request.user
 
     dates_for_weekday = []
@@ -241,21 +234,18 @@ def main(request, url_date=datetime.today().date(), page_number=1):
 
 def mykino(request):
     args = {}
-    args.update(csrf(request))
     args['user'] = request.user
     return render_to_response('mykino.html', args)
 
 
 def price(request):
     args = {}
-    args.update(csrf(request))
     args['user'] = request.user
     return render_to_response('price.html', args)
 
 
 def seans(request, name=''):
     args = {}
-    args.update(csrf(request))
     seans_data = {}
     args['user'] = request.user
     film = Seans.objects.filter(film__url_name=name)
@@ -298,7 +288,6 @@ def seans(request, name=''):
 @csrf_exempt
 def buy(request, seans_id):
     args = {}
-    args.update(csrf(request))
     if request.method == 'POST':
         user = request.user
         if request.POST.get('usluga', ) == 'buy':
@@ -351,7 +340,6 @@ def buy(request, seans_id):
 
 def soon(request, page_number=1):
     args = {}
-    args.update(csrf(request))
     args['user'] = request.user
 
     films = Film.objects.filter(prokat__gt=(datetime.today().date()) + timedelta(days=30))
@@ -363,7 +351,6 @@ def soon(request, page_number=1):
 
 def treler(request, name=''):
     args = {}
-    args.update(csrf(request))
     args['user'] = request.user
 
     film = Film.objects.filter(url_name=name)
@@ -377,7 +364,6 @@ def treler(request, name=''):
 
 def otziv(request, name=''):
     args = {}
-    args.update(csrf(request))
     args['user'] = request.user
     args['film'] = Film.objects.filter(url_name=name)[0]
     args['comment'] = Otziv.objects.filter(film__url_name=name)
@@ -429,7 +415,7 @@ def create_bilet(bilet):
 
     c.save()
 
-    startfile(settings.MEDIA_ROOT + "bilets.pdf")
+    # startfile(settings.MEDIA_ROOT + "bilets.pdf")
 
 
 def print_bilet(request):
@@ -446,7 +432,7 @@ def print_bilet(request):
 
 def kabinet(request, page_number=1, admin='0'):
     args = {}
-    args.update(csrf(request))
+
     user = request.user
     args['user'] = user
     args['admin'] = admin
@@ -637,4 +623,4 @@ def create_otchet(selss, variety):
     c.save()
     c.showPage()
 
-    startfile(settings.MEDIA_ROOT + 'report.pdf')
+    # startfile(settings.MEDIA_ROOT + 'report.pdf')
