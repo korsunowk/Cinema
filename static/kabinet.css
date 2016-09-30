@@ -50,41 +50,6 @@
 	margin: 0 auto;
 }
 
-/*.btn1 {
-	height: 30px;
-	width: 120px;
-	margin: 40px;
-	background: #fff;
-	border: 1px solid #2A2A2A;
-	color: #454545;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin-right: 0;
-	transition: 0.3s;
-}
-
-.btn1:hover {
-	background: #2A2A2A;
-	color: #fff;
-}
-.btn2:hover {
-	background: #2A2A2A;
-	color: #fff;
-}
-
-.btn2 {
-	height: 30px;
-	width: 120px;
-	margin: 40px;
-	background: #fff;
-	border: none;
-	color: #2A2A2A;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin-left: 0;
-	transition: 0.3s;
-	border: 1px solid #2A2A2A;
-}
-*/
-
 .nav .sp1:hover, .sp3:hover {
 background: rgb(153, 10, 65);
 	background: -moz-linear-gradient(90deg, rgb(70, 77, 255) 90%, rgb(70, 77, 255) 90%);
@@ -158,9 +123,6 @@ background: rgb(153, 10, 65);
 	color: #CC6A24;
 }
 
-
-/****************************/
-
 .navbar-inner .nav li {
 	font-size: 13px;
 	margin-left: 5px;
@@ -189,18 +151,12 @@ background: rgb(153, 10, 65);
 	text-shadow:none;
 }
 
-/*******************************/
-
-
 h4 {
 	margin-left: 20px;
 	padding-top:  18px;
 	font-weight: 100;
 	font-size: 22px;
 }
-
-
-/**************/
 
 #myCarousel {
 	width: 1000px;
@@ -212,8 +168,6 @@ h4 {
 	opacity: 0.7;
 	background: #000034;
 }
-
-/*************/
 
 .p_ul_one {
 	margin-left: 70px;
