@@ -28,15 +28,7 @@
 		Ищите фильмы по дням недели:
 		</p>
 		<div class="buttons">
-            {% if weekday == -1 %}
-			    <button class="button2"><a href="/{{ Pon }}/" class="sp3_a">Понедельник ({{ Понедельник }})</a></button>
-                <button class="button2"><a href="/{{ Vt }}/" class="sp3_a">Вторник ({{ Вторник }})</a></button>
-                <button class="button2"><a href="/{{ Sr }}/" class="sp3_a">Среда ({{ Среда }})</a></button>
-                <button class="button2"><a href="/{{ Cht }}/" class="sp3_a">Четверг ({{ Четверг }})</a></button>
-                <button class="button2"><a href="/{{ Pyat }}/" class="sp3_a">Пятница ({{ Пятница }})</a></button>
-                <button class="button2"><a href="/{{ Sub }}/" class="sp3_a">Суббота ({{ Суббота }})</a></button>
-                <button class="button2"><a href="/{{ Voskr }}/" class="sp3_a">Воскресенье ({{ Воскресенье }})</a></button>
-            {% elif weekday == 0 %}
+            {% if weekday == 1 %}
 			    <button class="button_active"><a href="/{{ Pon }}/" class="sp3_a">Понедельник ({{ Понедельник }})</a></button>
                 <button class="button2"><a href="/{{ Vt }}/" class="sp3_a">Вторник ({{ Вторник }})</a></button>
                 <button class="button2"><a href="/{{ Sr }}/" class="sp3_a">Среда ({{ Среда }})</a></button>
@@ -44,7 +36,7 @@
                 <button class="button2"><a href="/{{ Pyat }}/" class="sp3_a">Пятница ({{ Пятница }})</a></button>
                 <button class="button2"><a href="/{{ Sub }}/" class="sp3_a">Суббота ({{ Суббота }})</a></button>
                 <button class="button2"><a href="/{{ Voskr }}/" class="sp3_a">Воскресенье ({{ Воскресенье }})</a></button>
-            {% elif weekday == 1 %}
+            {% elif weekday == 2 %}
                 <button class="button2"><a href="/{{ Pon }}/" class="sp3_a">Понедельник ({{ Понедельник }})</a></button>
                 <button class="button_active"><a href="/{{ Vt }}/" class="sp3_a">Вторник ({{ Вторник }})</a></button>
                 <button class="button2"><a href="/{{ Sr }}/" class="sp3_a">Среда ({{ Среда }})</a></button>
@@ -52,7 +44,7 @@
                 <button class="button2"><a href="/{{ Pyat }}/" class="sp3_a">Пятница ({{ Пятница }})</a></button>
                 <button class="button2"><a href="/{{ Sub }}/" class="sp3_a">Суббота ({{ Суббота }})</a></button>
                 <button class="button2"><a href="/{{ Voskr }}/" class="sp3_a">Воскресенье ({{ Воскресенье }})</a></button>
-            {% elif weekday == 2 %}
+            {% elif weekday == 3 %}
                 <button class="button2"><a href="/{{ Pon }}/" class="sp3_a">Понедельник ({{ Понедельник }})</a></button>
                 <button class="button2"><a href="/{{ Vt }}/" class="sp3_a">Вторник ({{ Вторник }})</a></button>
                 <button class="button_active"><a href="/{{ Sr }}/" class="sp3_a">Среда ({{ Среда }})</a></button>
@@ -60,7 +52,7 @@
                 <button class="button2"><a href="/{{ Pyat }}/" class="sp3_a">Пятница ({{ Пятница }})</a></button>
                 <button class="button2"><a href="/{{ Sub }}/" class="sp3_a">Суббота ({{ Суббота }})</a></button>
                 <button class="button2"><a href="/{{ Voskr }}/" class="sp3_a">Воскресенье ({{ Воскресенье }})</a></button>
-            {% elif weekday == 3 %}
+            {% elif weekday == 4 %}
                 <button class="button2"><a href="/{{ Pon }}/" class="sp3_a">Понедельник ({{ Понедельник }})</a></button>
                 <button class="button2"><a href="/{{ Vt }}/" class="sp3_a">Вторник ({{ Вторник }})</a></button>
                 <button class="button2"><a href="/{{ Sr }}/" class="sp3_a">Среда ({{ Среда }})</a></button>
@@ -68,7 +60,7 @@
                 <button class="button2"><a href="/{{ Pyat }}/" class="sp3_a">Пятница ({{ Пятница }})</a></button>
                 <button class="button2"><a href="/{{ Sub }}/" class="sp3_a">Суббота ({{ Суббота }})</a></button>
                 <button class="button2"><a href="/{{ Voskr }}/" class="sp3_a">Воскресенье ({{ Воскресенье }})</a></button>
-            {% elif weekday == 4 %}
+            {% elif weekday == 5 %}
                 <button class="button2"><a href="/{{ Pon }}/" class="sp3_a">Понедельник ({{ Понедельник }})</a></button>
                 <button class="button2"><a href="/{{ Vt }}/" class="sp3_a">Вторник ({{ Вторник }})</a></button>
                 <button class="button2"><a href="/{{ Sr }}/" class="sp3_a">Среда ({{ Среда }})</a></button>
@@ -76,7 +68,7 @@
                 <button class="button_active"><a href="/{{ Pyat }}/" class="sp3_a">Пятница ({{ Пятница }})</a></button>
                 <button class="button2"><a href="/{{ Sub }}/" class="sp3_a">Суббота ({{ Суббота }})</a></button>
                 <button class="button2"><a href="/{{ Voskr }}/" class="sp3_a">Воскресенье ({{ Воскресенье }})</a></button>
-            {% elif weekday == 5 %}
+            {% elif weekday == 6 %}
                 <button class="button2"><a href="/{{ Pon }}/" class="sp3_a">Понедельник ({{ Понедельник }})</a></button>
                 <button class="button2"><a href="/{{ Vt }}/" class="sp3_a">Вторник ({{ Вторник }})</a></button>
                 <button class="button2"><a href="/{{ Sr }}/" class="sp3_a">Среда ({{ Среда }})</a></button>
@@ -84,7 +76,7 @@
                 <button class="button2"><a href="/{{ Pyat }}/" class="sp3_a">Пятница ({{ Пятница }})</a></button>
                 <button class="button_active"><a href="/{{ Sub }}/" class="sp3_a">Суббота ({{ Суббота }})</a></button>
                 <button class="button2"><a href="/{{ Voskr }}/" class="sp3_a">Воскресенье ({{ Воскресенье }})</a></button>
-            {% elif weekday == 6 %}
+            {% elif weekday == 7 %}
                 <button class="button2"><a href="/{{ Pon }}/" class="sp3_a">Понедельник ({{ Понедельник }})</a></button>
                 <button class="button2"><a href="/{{ Vt }}/" class="sp3_a">Вторник ({{ Вторник }})</a></button>
                 <button class="button2"><a href="/{{ Sr }}/" class="sp3_a">Среда ({{ Среда }})</a></button>

@@ -4,11 +4,12 @@
 <head>
 	<title>{% block title %}{% endblock %}</title>
 	<link type="image/x-icon" rel="shortcut icon" href="{% static 'img/ico1.ico' %}">
-	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
 	{% block template %}{% endblock %}
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
 </head>
 <body>
 <div class="back">
@@ -43,7 +44,9 @@
     {% block content %}{% endblock %}
         <div class="footer">
             <p class="foot">
-            С 9 июля <a href="http://www.kinofilms.ua/movie/89424_Now_You_See_Me2/" class="foot_a">Иллюзия обмана 2</a> в нашем Кинотеатре
+            С 9 июля
+                <a href="http://www.kinofilms.ua/movie/89424_Now_You_See_Me2/" class="foot_a">Иллюзия обмана 2</a>
+                в нашем Кинотеатре
             <br>
             Всю информацию по работе театра вы можете узнать по номерам (061) 701-73-89, 220-17-56
             <br>

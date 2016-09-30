@@ -36,7 +36,9 @@
             <tr>
                 <td>
                     <div class="text_bilet">
-                        <div class="td_date">{{ bilet.seans_id.date }}, {{ bilet.seans_id.time }}</div> <a href="/otziv/{{ bilet.seans_id.film.url_name }}/">{{ bilet.seans_id.film.name }}</a>, ряд: {{ bilet.row }}, место: {{ bilet.seat }}, цена: {{ bilet.price }} грн
+                        <div class="td_date">{{ bilet.seans_id.date }}, {{ bilet.seans_id.time }}</div>
+                        <a href="/otziv/{{ bilet.seans_id.film.url_name }}/">{{ bilet.seans_id.film.name }}</a>
+                        , ряд: {{ bilet.row }}, место: {{ bilet.seat }}, цена: {{ bilet.price }} грн
                         {% if not bilet.forname %}
                             <br>код для печати: {{ bilet.pk }}
                         {% else %}

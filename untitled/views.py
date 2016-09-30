@@ -15,13 +15,13 @@ from django.conf import settings
 
 
 def contact(request):
-    args = {}
+    args = dict()
     args['user'] = request.user
     return render_to_response('contact.html', args)
 
 
 def guest(request):
-    args = {}
+    args = dict()
     args['user'] = request.user
     all_otzivs = []
     otzivs = []
@@ -55,7 +55,7 @@ def logout(request):
 
 
 def login(request):
-    args = {}
+    args = dict()
     if request.POST:
         email = request.POST.get('email', '')
         password = request.POST.get('password', '')
@@ -73,7 +73,7 @@ def login(request):
 
 
 def register(request):
-    args = {}
+    args = dict()
     args['form'] = UserCreateForm()
     if request.POST:
         newuser_form = UserCreateForm(request.POST)
@@ -92,131 +92,54 @@ def register(request):
 
 
 def main(request, url_date=datetime.today().date(), page_number=1):
-    args = {}
-    args['user'] = request.user
+    tmp_args, tmp_args2 = dict(), dict()
+
+    tmp_args['Понедельник'] = tmp_args2['Pon'] = 1
+    tmp_args['Вторник'] = tmp_args2['Vt'] = 2
+    tmp_args['Среда'] = tmp_args2['Sr'] = 3
+    tmp_args['Четверг'] = tmp_args2['Cht'] = 4
+    tmp_args['Пятница'] = tmp_args2['Pyat'] = 5
+    tmp_args['Суббота'] = tmp_args2['Sub'] = 6
+    tmp_args['Воскресенье'] = tmp_args2['Voskr'] = 7
 
     dates_for_weekday = []
     dates = list()
-    dates.append(datetime.today().date().strftime('%Y-%m-%d'))
-    dates_for_weekday.append(datetime.today().date().strftime('%d.%m'))
+    dates.append((datetime.today().date().strftime('%Y-%m-%d'), datetime.isoweekday(datetime.today().date())))
+    dates_for_weekday.append((datetime.today().date().strftime('%d.%m'), datetime.isoweekday(datetime.today().date())))
 
-    for i in range(1, 8):
-        dates_for_weekday.append((datetime.today().date() + timedelta(days=i)).strftime('%d.%m'))
-        dates.append((datetime.today().date() + timedelta(days=i)).strftime('%Y-%m-%d'))
+    for i in range(1, 7):
+        dates_for_weekday.append(
+            ((datetime.today().date() + timedelta(days=i)).strftime('%d.%m'),
+             datetime.isoweekday((datetime.today().date() + timedelta(days=i)))))
+        dates.append(
+            ((datetime.today().date() + timedelta(days=i)).strftime('%Y-%m-%d'),
+             datetime.isoweekday((datetime.today().date() + timedelta(days=i)))))
 
-    date_iterator = datetime.weekday(datetime.today().date())
+    def reverse_dictionary(dictionary):
+        new_dictionary = dict()
 
-    args['weekday'] = datetime.weekday(datetime.strptime(str(url_date), '%Y-%m-%d').date())
+        for key in dictionary:
+            new_dictionary.setdefault(dictionary[key], key)
+        return new_dictionary
 
-    if date_iterator == 0:
-        args['Понедельник'] = dates_for_weekday[0]
-        args['Вторник'] = dates_for_weekday[1]
-        args['Среда'] = dates_for_weekday[2]
-        args['Четверг'] = dates_for_weekday[3]
-        args['Пятница'] = dates_for_weekday[4]
-        args['Суббота'] = dates_for_weekday[5]
-        args['Воскресенье'] = dates_for_weekday[6]
-        args['Pon'] = dates[0]
-        args['Vt'] = dates[1]
-        args['Sr'] = dates[2]
-        args['Cht'] = dates[3]
-        args['Pyat'] = dates[4]
-        args['Sub'] = dates[5]
-        args['Voskr'] = dates[6]
-    elif date_iterator == 1:
-        args['Понедельник'] = dates_for_weekday[6]
-        args['Вторник'] = dates_for_weekday[0]
-        args['Среда'] = dates_for_weekday[1]
-        args['Четверг'] = dates_for_weekday[2]
-        args['Пятница'] = dates_for_weekday[3]
-        args['Суббота'] = dates_for_weekday[4]
-        args['Воскресенье'] = dates_for_weekday[5]
-        args['Pon'] = dates[6]
-        args['Vt'] = dates[0]
-        args['Sr'] = dates[1]
-        args['Cht'] = dates[2]
-        args['Pyat'] = dates[3]
-        args['Sub'] = dates[4]
-        args['Voskr'] = dates[5]
-    elif date_iterator == 2:
-        args['Понедельник'] = dates_for_weekday[5]
-        args['Вторник'] = dates_for_weekday[6]
-        args['Среда'] = dates_for_weekday[0]
-        args['Четверг'] = dates_for_weekday[1]
-        args['Пятница'] = dates_for_weekday[2]
-        args['Суббота'] = dates_for_weekday[3]
-        args['Воскресенье'] = dates_for_weekday[4]
-        args['Pon'] = dates[5]
-        args['Vt'] = dates[6]
-        args['Sr'] = dates[0]
-        args['Cht'] = dates[1]
-        args['Pyat'] = dates[2]
-        args['Sub'] = dates[3]
-        args['Voskr'] = dates[4]
-    elif date_iterator == 3:
-        args['Понедельник'] = dates_for_weekday[4]
-        args['Вторник'] = dates_for_weekday[5]
-        args['Среда'] = dates_for_weekday[6]
-        args['Четверг'] = dates_for_weekday[0]
-        args['Пятница'] = dates_for_weekday[1]
-        args['Суббота'] = dates_for_weekday[2]
-        args['Воскресенье'] = dates_for_weekday[3]
-        args['Pon'] = dates[4]
-        args['Vt'] = dates[5]
-        args['Sr'] = dates[6]
-        args['Cht'] = dates[0]
-        args['Pyat'] = dates[1]
-        args['Sub'] = dates[2]
-        args['Voskr'] = dates[3]
-    elif date_iterator == 4:
-        args['Понедельник'] = dates_for_weekday[3]
-        args['Вторник'] = dates_for_weekday[4]
-        args['Среда'] = dates_for_weekday[5]
-        args['Четверг'] = dates_for_weekday[6]
-        args['Пятница'] = dates_for_weekday[0]
-        args['Суббота'] = dates_for_weekday[1]
-        args['Воскресенье'] = dates_for_weekday[2]
-        args['Pon'] = dates[3]
-        args['Vt'] = dates[4]
-        args['Sr'] = dates[5]
-        args['Cht'] = dates[6]
-        args['Pyat'] = dates[0]
-        args['Sub'] = dates[1]
-        args['Voskr'] = dates[2]
-    elif date_iterator == 5:
-        args['Понедельник'] = dates_for_weekday[2]
-        args['Вторник'] = dates_for_weekday[3]
-        args['Среда'] = dates_for_weekday[4]
-        args['Четверг'] = dates_for_weekday[5]
-        args['Пятница'] = dates_for_weekday[6]
-        args['Суббота'] = dates_for_weekday[0]
-        args['Воскресенье'] = dates_for_weekday[1]
-        args['Pon'] = dates[2]
-        args['Vt'] = dates[3]
-        args['Sr'] = dates[4]
-        args['Cht'] = dates[5]
-        args['Pyat'] = dates[6]
-        args['Sub'] = dates[0]
-        args['Voskr'] = dates[1]
-    elif date_iterator == 6:
-        args['Понедельник'] = dates_for_weekday[1]
-        args['Вторник'] = dates_for_weekday[2]
-        args['Среда'] = dates_for_weekday[3]
-        args['Четверг'] = dates_for_weekday[4]
-        args['Пятница'] = dates_for_weekday[5]
-        args['Суббота'] = dates_for_weekday[6]
-        args['Воскресенье'] = dates_for_weekday[0]
-        args['Pon'] = dates[1]
-        args['Vt'] = dates[2]
-        args['Sr'] = dates[3]
-        args['Cht'] = dates[4]
-        args['Pyat'] = dates[5]
-        args['Sub'] = dates[6]
-        args['Voskr'] = dates[0]
+    def fill_dates(_args, second_args, _dates):
+        new_args = reverse_dictionary(_args)
+        new_second_args = reverse_dictionary(second_args)
+        for one_date in range(len(_dates)):
+            _args[new_args[_dates[one_date][1]]] = _dates[one_date][0]
+            second_args[new_second_args[_dates[one_date][1]]] = _dates[one_date][0]
+        return _args, second_args
 
+    args, args2 = fill_dates(tmp_args, tmp_args2, dates)
+
+    args.update(args2)
+    args['user'] = request.user
     args['date_url'] = str(url_date)
     args['for_date'] = datetime.strptime(str(url_date), '%Y-%m-%d').date()
-
+    if isinstance(url_date, str):
+        args['weekday'] = datetime.isoweekday(datetime.strptime(url_date, '%Y-%m-%d').date())
+    else:
+        args['weekday'] = datetime.isoweekday(url_date)
     seanss = Seans.objects.filter(date=str(url_date))
     a = b = []
 
@@ -233,19 +156,19 @@ def main(request, url_date=datetime.today().date(), page_number=1):
 
 
 def mykino(request):
-    args = {}
+    args = dict()
     args['user'] = request.user
     return render_to_response('mykino.html', args)
 
 
 def price(request):
-    args = {}
+    args = dict()
     args['user'] = request.user
     return render_to_response('price.html', args)
 
 
 def seans(request, name=''):
-    args = {}
+    args = dict()
     seans_data = {}
     args['user'] = request.user
     film = Seans.objects.filter(film__url_name=name)
@@ -287,7 +210,7 @@ def seans(request, name=''):
 
 @csrf_exempt
 def buy(request, seans_id):
-    args = {}
+    args = dict()
     if request.method == 'POST':
         user = request.user
         if request.POST.get('usluga', ) == 'buy':
@@ -339,7 +262,7 @@ def buy(request, seans_id):
 
 
 def soon(request, page_number=1):
-    args = {}
+    args = dict()
     args['user'] = request.user
 
     films = Film.objects.filter(prokat__gt=(datetime.today().date()) + timedelta(days=30))
@@ -350,7 +273,7 @@ def soon(request, page_number=1):
 
 
 def treler(request, name=''):
-    args = {}
+    args = dict()
     args['user'] = request.user
 
     film = Film.objects.filter(url_name=name)
@@ -363,7 +286,7 @@ def treler(request, name=''):
 
 
 def otziv(request, name=''):
-    args = {}
+    args = dict()
     args['user'] = request.user
     args['film'] = Film.objects.filter(url_name=name)[0]
     args['comment'] = Otziv.objects.filter(film__url_name=name)
@@ -431,7 +354,7 @@ def print_bilet(request):
 
 
 def kabinet(request, page_number=1, admin='0'):
-    args = {}
+    args = dict()
 
     user = request.user
     args['user'] = user
