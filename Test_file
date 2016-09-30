@@ -1218,3 +1218,4883 @@ for file in folder:
                         )
                     )
 os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
+os.chdir("TonesFileToUpload/")
+folder=os.listdir(os.getcwd())
+ext3 = ['.mp3']
+existing_files = []
+for exist_file in TonesForPractice.objects.all():
+    existing_files.append(exist_file.name)
+
+for file in folder:
+    file_path = os.getcwd() + '/' + file
+    if str(file)[-4:] in ext3:
+        with open(file_path,"rb") as f:
+            if file.split('.mp3')[0] not in existing_files:
+                tone = TonesForPractice()
+                tone.tone_file.save(
+                    file, 
+                    File(
+                        BytesIO(f.read())
+                        )
+                    )
+os.chdir("../")
