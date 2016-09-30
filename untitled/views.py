@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response, redirect, HttpResponse
+from django.shortcuts import render_to_response, redirect, HttpResponse, render
 from films.models import Film, Seans, Bilet, Bron, Sell
 from django.core.paginator import Paginator
 from datetime import datetime, timedelta
@@ -12,6 +12,7 @@ from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from django.conf import settings
+from django.views.decorators.csrf import csrf_protect
 
 
 def contact(request):
@@ -20,6 +21,7 @@ def contact(request):
     return render_to_response('contact.html', args)
 
 
+@csrf_protect
 def guest(request):
     args = dict()
     args['user'] = request.user
@@ -46,7 +48,7 @@ def guest(request):
 
         return redirect('/guest/')
 
-    return render_to_response('guest.html', args)
+    return render(request, 'guest.html', args)
 
 
 def logout(request):
@@ -54,6 +56,7 @@ def logout(request):
     return redirect("/")
 
 
+@csrf_protect
 def login(request):
     args = dict()
     if request.POST:
@@ -67,11 +70,12 @@ def login(request):
             return redirect("/")
         else:
             args['login_error'] = "Net takovih"
-            return render_to_response('signin.html', args)
+            return render(request, 'signin.html', args)
     else:
-        return render_to_response('signin.html', args)
+        return render(request, 'signin.html', args)
 
 
+@csrf_protect
 def register(request):
     args = dict()
     args['form'] = UserCreateForm()
@@ -88,7 +92,7 @@ def register(request):
         else:
             args['reg_error'] = 'Error.'
             args['form'] = newuser_form
-    return render_to_response('registr.html', args)
+    return render(request, 'registr.html', args)
 
 
 def main(request, url_date=datetime.today().date(), page_number=1):
@@ -258,7 +262,7 @@ def buy(request, seans_id):
         if request.user.is_authenticated():
             args['user_name'] = request.user.firstname + " " + request.user.lastname
 
-        return render_to_response('buy_window.html', args)
+        return render(request, 'buy_window.html', args)
 
 
 def soon(request, page_number=1):
@@ -285,6 +289,7 @@ def treler(request, name=''):
     return redirect('/')
 
 
+@csrf_protect
 def otziv(request, name=''):
     args = dict()
     args['user'] = request.user
@@ -295,10 +300,10 @@ def otziv(request, name=''):
               text=request.POST.get('comment', ''), film=Film.objects.get(url_name=name),
               date=datetime.now().date()).save()
 
-        return render_to_response('otziv.html', args)
+        return render(request, 'otziv.html', args)
     else:
         if Film.objects.filter(url_name=name):
-            return render_to_response('otziv.html', args)
+            return render(request, 'otziv.html', args)
 
     return redirect('/')
 
