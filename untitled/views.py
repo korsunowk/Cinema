@@ -1,18 +1,19 @@
 from django.shortcuts import render_to_response, redirect, HttpResponse, render
-from films.models import Film, Seans, Bilet, Bron, Sell
 from django.core.paginator import Paginator
 from datetime import datetime, timedelta
 from django.contrib import auth
-from .forms import UserCreateForm
-from kinouser.models import Kinouser
 from django.views.decorators.csrf import csrf_exempt
-from otziv.models import Otziv
-from guest_otziv.models import GuestOtziv, AdminOtziv
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from django.conf import settings
 from django.views.decorators.csrf import csrf_protect
+
+from films.models import Film, Seans, Bilet, Bron, Sell
+from kinouser.models import Kinouser
+from guest_otziv.models import GuestOtziv, AdminOtziv
+from otziv.models import Otziv
+from .forms import UserCreateForm
 
 
 def contact(request):
