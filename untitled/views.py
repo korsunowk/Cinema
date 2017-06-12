@@ -1,8 +1,7 @@
 from django.shortcuts import render_to_response, redirect, HttpResponse, render
 from django.core.paginator import Paginator
 from django.contrib import auth
-from django.views.decorators.csrf import csrf_exempt
-from django.views.decorators.csrf import csrf_protect
+from django.views.decorators.csrf import csrf_exempt, csrf_protect
 from django.conf import settings
 
 from reportlab.pdfgen import canvas
