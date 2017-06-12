@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response, redirect, HttpResponse, render
+from django.views.decorators.csrf import csrf_exempt, csrf_protect
 from django.core.paginator import Paginator
 from django.contrib import auth
-from django.views.decorators.csrf import csrf_exempt, csrf_protect
 from django.conf import settings
 
 from reportlab.pdfgen import canvas
@@ -110,8 +110,10 @@ def main(request, url_date=datetime.today().date(), page_number=1):
 
     dates_for_weekday = []
     dates = list()
-    dates.append((datetime.today().date().strftime('%Y-%m-%d'), datetime.isoweekday(datetime.today().date())))
-    dates_for_weekday.append((datetime.today().date().strftime('%d.%m'), datetime.isoweekday(datetime.today().date())))
+    dates.append((datetime.today().date().strftime('%Y-%m-%d'), 
+                  datetime.isoweekday(datetime.today().date())))
+    dates_for_weekday.append((datetime.today().date().strftime('%d.%m'), 
+                              datetime.isoweekday(datetime.today().date())))
 
     for i in range(1, 7):
         dates_for_weekday.append(
@@ -224,7 +226,9 @@ def buy(request, seans_id):
             new_bilets = request.POST.get('tikets', '')[:-1]
 
             for i in new_bilets.split(','):
-                bilet = Bilet(row=i.split(':')[0], seat=i.split(':')[1], seans_id=seans_id, price=i.split(':')[2])
+                bilet = Bilet(row=i.split(':')[0], 
+                              seat=i.split(':')[1], 
+                              seans_id=seans_id, price=i.split(':')[2])
                 bilet.save()
                 user.bilets.add(bilet)
 
