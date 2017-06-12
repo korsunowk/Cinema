@@ -240,7 +240,8 @@ def buy(request, seans_id):
             name_user = request.user.firstname + " " + request.user.lastname
 
             for i in new_bilets.split(','):
-                bilet = Bron(row=i.split(':')[0], seat=i.split(':')[1], seans_id=seans_id, forname=name_user,
+                bilet = Bron(row=i.split(':')[0], seat=i.split(':')[1], 
+                             seans_id=seans_id, forname=name_user,
                              price=i.split(':')[2])
                 bilet.save()
                 user.bron.add(bilet)
@@ -302,9 +303,12 @@ def otziv(request, name=''):
     args['film'] = Film.objects.filter(url_name=name)[0]
     args['comment'] = Otziv.objects.filter(film__url_name=name)
     if request.method == 'POST':
-        Otziv(name=request.POST.get('name', ''), email=request.POST.get('email', ''),
-              text=request.POST.get('comment', ''), film=Film.objects.get(url_name=name),
-              date=datetime.now().date()).save()
+        Otziv(name=request.POST.get('name', ''), 
+              email=request.POST.get('email', ''),
+              text=request.POST.get('comment', ''), 
+              film=Film.objects.get(url_name=name),
+              date=datetime.now().date())
+        .save()
 
         return render(request, 'otziv.html', args)
     else:
@@ -389,9 +393,7 @@ def kabinet(request, page_number=1, admin='0'):
             for date in dates:
                 for bilet in user.bilets.all():
                     if bilet.seans_id.date == date:
-                        if bilet in bilets:
-                            pass
-                        else:
+                        if bilet not in bilets:
                             bilets.append(bilet)
                 for bron in user.bron.all():
                     if bron.seans_id.date == date:
@@ -457,7 +459,8 @@ def print_otchet(request, variety):
         admin = 'interval_true'
         try:
             sells = Sell.objects.filter(
-                seans_id__date__range=[request.POST.get('date1_seans', ''), request.POST.get('date2_seans', '')])
+                seans_id__date__range=[request.POST.get('date1_seans', ''), 
+                                       request.POST.get('date2_seans', '')])
             create_otchet(sells, 'interval')
         except Exception as e:
             print(e)
