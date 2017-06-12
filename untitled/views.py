@@ -1,13 +1,15 @@
 from django.shortcuts import render_to_response, redirect, HttpResponse, render
 from django.core.paginator import Paginator
-from datetime import datetime, timedelta
 from django.contrib import auth
 from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_protect
+from django.conf import settings
+
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from django.conf import settings
-from django.views.decorators.csrf import csrf_protect
+
+from datetime import datetime, timedelta
 
 from films.models import Film, Seans, Bilet, Bron, Sell
 from kinouser.models import Kinouser
