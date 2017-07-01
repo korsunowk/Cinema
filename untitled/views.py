@@ -547,7 +547,7 @@ def create_otchet(selss, variety):
         c.drawString(100, y, i.seans_id.film.name)
         c.drawString(160, y - 25, 'Дата сеанса:')
         c.drawString(160, y - 50, 'Время сеанса:')
-        c.drawString(160, y - 75, 'Количество проданных билетов : ')
+        c.drawString(160, y - 75, 'Количество проданных билетов: ')
         c.drawString(160, y - 100, 'Общая выручка : ')
         c.drawString(465, y - 25, str(i.seans_id.date))
         c.drawString(465, y - 50, str(i.seans_id.time))
