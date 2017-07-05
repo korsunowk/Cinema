@@ -27,7 +27,7 @@ def contact(request):
 def guest(request):
     args = dict()
     args['user'] = request.user
-    all_otzivs = []
+    all_otzivs = otzivs = []
     otzivs = []
     for otziv_ in GuestOtziv.objects.all():
         otzivs.append(otziv_)
