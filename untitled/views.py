@@ -110,8 +110,7 @@ def main(request, url_date=datetime.today().date(), page_number=1):
     tmp_args['Суббота'] = tmp_args2['Sub'] = 6
     tmp_args['Воскресенье'] = tmp_args2['Voskr'] = 7
 
-    dates_for_weekday = []
-    dates = list()
+    dates_for_weekday = dates = []
     dates.append((datetime.today().date().strftime('%Y-%m-%d'), 
                   datetime.isoweekday(datetime.today().date())))
     dates_for_weekday.append((datetime.today().date().strftime('%d.%m'), 
