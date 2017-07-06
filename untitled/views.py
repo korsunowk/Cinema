@@ -43,10 +43,12 @@ def guest(request):
     if request.POST:
         if request.POST.get('admin', '') == 'false':
             GuestOtziv(name=request.POST.get('name', ''), email=request.POST.get('email', ''),
-                       text=request.POST.get('comment', ''), date=datetime.now().date()).save()
+                       text=request.POST.get('comment', ''), date=datetime.now().date())
+            .save()
         elif request.POST.get('admin', '') == 'true':
             AdminOtziv(text=request.POST.get('comment', ''),
-                       guestOtziv=GuestOtziv.objects.get(id=request.POST.get('guest_id', ''))).save()
+                       guestOtziv=GuestOtziv.objects.get(id=request.POST.get('guest_id', '')))
+            .save()
 
         return redirect('/guest/')
 
