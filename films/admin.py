@@ -1,6 +1,7 @@
 from django.contrib import admin
-from films.models import *
 from django.contrib.admin import DateFieldListFilter
+
+from films.models import *
 
 
 # Register your models here.
