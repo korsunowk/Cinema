@@ -1,6 +1,7 @@
 from django.db import models
-import datetime
 from django.forms import ValidationError
+
+import datetime
 
 
 # Create your models here.
