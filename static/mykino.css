@@ -190,12 +190,12 @@ h4 {
 }
 
 .columns {
-position: relative;
-width: 400px;
-display: inline;
-float: left;
-margin: 10px 50px;
-padding: 0;
+	position: relative;
+	width: 400px;
+	display: inline;
+	float: left;
+	margin: 10px 50px;
+	padding: 0;
 }
 
 .columns1 {
