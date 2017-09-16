@@ -4,7 +4,6 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 class UserCreateForm(UserCreationForm):
-
     email = forms.EmailField(required=True,
                              widget=forms.EmailInput(attrs={'required': 'required',
                                                             'class': "inp1 blue", 'style': "text-align:center"}))
