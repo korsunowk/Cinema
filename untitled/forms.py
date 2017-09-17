@@ -1,6 +1,7 @@
 from django import forms
-from kinouser.models import Kinouser
 from django.contrib.auth.forms import UserCreationForm
+
+from kinouser.models import Kinouser
 
 
 class UserCreateForm(UserCreationForm):
