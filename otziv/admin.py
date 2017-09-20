@@ -1,6 +1,6 @@
 from django.contrib import admin
-from otziv.models import Otziv
 from django.contrib.admin import DateFieldListFilter
+from otziv.models import Otziv
 
 
 @admin.register(Otziv)
