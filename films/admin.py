@@ -34,11 +34,10 @@ class SeansAdmin(admin.ModelAdmin):
     list_filter = (
         ('date', DateFieldListFilter),
     )
-    fieldsets = (
-        (None, {
+    fieldsets = ((
+        None, {
             'fields': ('date', 'time', 'film', 'price')
-        }
-         ),
+        }),
     )
 
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
