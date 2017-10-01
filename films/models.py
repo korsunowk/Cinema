@@ -73,7 +73,6 @@ class Seans(models.Model):
         return name
 
     def __str__(self):
-
         name = self.film.name + ", " + str(self.date) + " " + str(self.time)[:5]
         return name
 
