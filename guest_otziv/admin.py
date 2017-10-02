@@ -1,6 +1,7 @@
 from django.contrib import admin
-from guest_otziv.models import GuestOtziv, AdminOtziv
 from django.contrib.admin import DateFieldListFilter
+
+from guest_otziv.models import GuestOtziv, AdminOtziv
 
 
 @admin.register(GuestOtziv)
