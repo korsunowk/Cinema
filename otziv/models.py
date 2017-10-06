@@ -10,9 +10,6 @@ class Otziv(models.Model):
     date = models.DateField()
     film = models.ForeignKey(Film)
 
-    def __unicode__(self):
-        return self.film.name
-
     def __str__(self):
         return self.film.name
 
