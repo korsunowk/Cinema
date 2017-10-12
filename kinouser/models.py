@@ -39,7 +39,6 @@ class Kinouser(AbstractBaseUser, PermissionsMixin):
         unique=True,
         null=False,
         blank=False
-
     )
 
     firstname = models.CharField(
