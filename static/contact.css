@@ -52,7 +52,7 @@
 
 
 .nav .sp1:hover, .sp3:hover {
-background: rgb(153, 10, 65);
+	background: rgb(153, 10, 65);
 	background: -moz-linear-gradient(90deg, rgb(70, 77, 255) 90%, rgb(70, 77, 255) 90%);
 	background: -webkit-linear-gradient(90deg, rgb(70, 77, 255) 90%, rgb(70, 77, 255) 90%);
 	background: -o-linear-gradient(90deg, rgb(70, 77, 255) 90%, rgb(70, 77, 255) 90%);
