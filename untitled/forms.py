@@ -5,9 +5,12 @@ from kinouser.models import Kinouser
 
 
 class UserCreateForm(UserCreationForm):
-    email = forms.EmailField(required=True,
-                             widget=forms.EmailInput(attrs={'required': 'required',
-                                                            'class': "inp1 blue", 'style': "text-align:center"}))
+    email = forms.EmailField(
+        required=True, 
+        widget=forms.EmailInput(
+            attrs={'required': 'required', 'class': "inp1 blue", 'style': "text-align:center"}
+        )
+    )
     firstname = forms.CharField(required=True,
                                 widget=forms.TextInput(attrs={'required': 'required',
                                                               'class': "inp2 green", 'style': "text-align:center"}))
