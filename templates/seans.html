@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="{% static 'seans.css' %}">
 {% endblock %}
 {% block navbar %}
-<div class="navbar">
+	<div class="navbar">
 		<div class="navbar-inner">
 			<ul class="nav">
 				<li class="sp1"><a href="/">АФИША</a></li>
@@ -17,9 +17,9 @@
 				<li class="sp1"><a href="/contact">КОНТАКТЫ</a></li>
 				{% if user.is_authenticated %}
 				    <li class="sp2"><a href="/kabinet/">Кабинет</a></li>|<li class="sp2"><a href="/logout">Выход</a></li>
-                {% else %}
-                    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
-                {% endif %}
+				{% else %}
+				    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
+				{% endif %}
 			</ul>
 		</div>
 	</div>
