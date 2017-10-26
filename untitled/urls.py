@@ -21,7 +21,6 @@ from untitled import views
 from untitled import settings
 
 urlpatterns = [
- 
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.main),
     url(r'^contact/$', views.contact),
