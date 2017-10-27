@@ -26,12 +26,12 @@
 	height: 500px;
 }
 body{
-    color:white;
+    	color:white;
 	margin:15px;
 	width:1000px;
 	height:600px;
 	background-image: url(img/test.jpg);
-    background-size: cover;
+    	background-size: cover;
 }
 .one_td{
 	padding-right:200px;
