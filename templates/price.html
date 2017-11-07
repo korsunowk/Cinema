@@ -16,9 +16,9 @@
 				<li class="sp1"><a href="/contact">КОНТАКТЫ</a></li>
 				{% if user.is_authenticated %}
 				    <li class="sp2"><a href="/kabinet/">Кабинет</a></li>|<li class="sp2"><a href="/logout">Выход</a></li>
-                {% else %}
-                    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
-                {% endif %}
+				{% else %}
+				    <li class="sp2"><a href="/sign_in">Вход | Регистрация</a></li>
+				{% endif %}
 			</ul>
 		</div>
 	</div>
