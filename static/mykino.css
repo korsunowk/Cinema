@@ -201,13 +201,13 @@ h4 {
 }
 
 .columns1 {
-position: relative;
-width: 400px;
-height: 290px;
-display: inline;
-float: right;
-margin: 10px 50px;
-padding: 0;
+	position: relative;
+	width: 400px;
+	height: 290px;
+	display: inline;
+	float: right;
+	margin: 10px 50px;
+	padding: 0;
 }
 
 
