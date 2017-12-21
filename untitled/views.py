@@ -261,8 +261,7 @@ def buy(request, seans_id):
             black_bilet += (str(i.row) + ',' + str(i.seat)) + ";"
 
         prices = seans_[0].price.split(',')
-        price1 = prices[0]
-        price2 = prices[1]
+        price1, price2 = prices[0], prices[1]
         args['price1'] = price1
         args['price2'] = price2
         args['red_bilet'] = red_bilet
